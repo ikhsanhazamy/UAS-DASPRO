@@ -1,15 +1,6 @@
 # UAS-DASPRO
 
 ```mermaid
-graph TD
-    A[Akun] -->|Memiliki| B[Barang];
-    A -->|Memiliki| C[Penjual];
-    A -->|Memiliki| D[Pembeli];
-    B -->|Memiliki| E[Detail Penjualan];
-    C -->|Memiliki| F[Penjualan];
-```
-
-```mermaid
 classDiagram
     class Akun{
         -nama :String
@@ -17,9 +8,10 @@ classDiagram
         -alamat :
     }
     class Barang{
-        -idBarang :String
-        -namaBarang :String
-        -hargaBarang :int
+        -idBuku :String
+        -namaBuku :String
+        -kategoriBuku:
+        -hargaBuku :int
         +isAvailable() 
         +getHarga():int
     }
