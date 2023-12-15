@@ -49,11 +49,10 @@ classDiagram
         -method(type): type
     }
 
-    
+    Akun --|> Pembeli
+    Akun --|> Penjual
     Barang --|> DetailPenjualan
     Penjualan --*  DetailPenjualan
-    Pembeli --|> Akun
-    Penjual --|> Akun
     Penjualan <|-- Pembeli
     Penjualan <|-- Penjual
     
