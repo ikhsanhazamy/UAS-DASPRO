@@ -51,7 +51,7 @@ classDiagram
     Akun <|-- Pembeli
     Akun <|-- Penjual
     DetailPenjualan --> Barang
-    Penjualan -->> DetailPenjualan
+    Penjualan --> DetailPenjualan
     Penjualan <-- Pembeli
     Penjualan <-- Penjual
 ```
