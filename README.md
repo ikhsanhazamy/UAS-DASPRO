@@ -48,8 +48,8 @@ classDiagram
         -method(type): type    
         -method(type): type
     }
-    Akun <-- Pembeli
-    Akun <-- Penjual
+    Akun <|-- Pembeli
+    Akun <|-- Penjual
     DetailPenjualan --> Barang
     Penjualan -->> DetailPenjualan
     Penjualan <-- Pembeli
