@@ -48,11 +48,13 @@ classDiagram
         -method(type): type    
         -method(type): type
     }
+
+    
+    DetailPenjualan --|> Barang
+    DetailPenjualan *-- Penjualan
     Akun <|-- Pembeli
     Akun <|-- Penjual
     Penjualan <|-- Pembeli
     Penjualan <|-- Penjual
-    DetailPenjualan --|> Barang
-    DetailPenjualan *-- Penjualan
     
 ```
