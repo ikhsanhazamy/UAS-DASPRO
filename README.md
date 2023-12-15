@@ -5,8 +5,10 @@ classDiagram
     class Akun{
         -nama :String
         -email :String
+        -password:
         -alamat :
     }
+
     class Barang{
         -idBuku :String
         -namaBuku :String
@@ -15,6 +17,18 @@ classDiagram
         +isAvailable() 
         +getHarga():int
     }
+
+    class KategoriBuku{
+        -Novel
+        -Dongeng
+        -Biografi
+        -Fantasi
+        -Horor
+        -Misteri
+        -Romantis
+        -Sejarah
+    }
+
     class Pembeli{
         -idPembeli: String 
         -nama: String 
@@ -29,6 +43,7 @@ classDiagram
         -email
         +getNama()
     }
+
     class Penjualan{
         -idPenjualan: String 
         -pembeli: Pembeli 
@@ -39,6 +54,7 @@ classDiagram
         +create(Penjualan): Penjualan   
         +shows(Penjualan): void   
     }
+
     class DetailPenjualan{
         -idDetailPenjulan:String   
         -penjulan: Penjulan   
@@ -49,11 +65,11 @@ classDiagram
         -method(type): type
     }
 
-    Akun --|> Pembeli
-    Akun --|> Penjual
+    Akun <|--|> Pembeli
     Barang --|> DetailPenjualan
-    Penjualan --*  DetailPenjualan
-    Barang <|-- Pembeli
+    Pembeli --|> Barang
     Penjualan <|-- Penjual
+    Pembeli <|--|> KategoriBuku
+    Penjualan --*  DetailPenjualan
     
 ```
