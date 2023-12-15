@@ -52,8 +52,8 @@ classDiagram
     
     DetailPenjualan --|> Barang
     DetailPenjualan *-- Penjualan
-    Akun <|-- Pembeli
-    Akun <|-- Penjual
+    Pembeli --|> Akun
+    Penjual --|> Akun
     Penjualan <|-- Pembeli
     Penjualan <|-- Penjual
     
