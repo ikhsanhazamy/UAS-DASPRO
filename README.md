@@ -53,7 +53,7 @@ classDiagram
     Akun --|> Penjual
     Barang --|> DetailPenjualan
     Penjualan --*  DetailPenjualan
-    Penjualan <|-- Pembeli
+    Barang <|-- Pembeli
     Penjualan <|-- Penjual
     
 ```
