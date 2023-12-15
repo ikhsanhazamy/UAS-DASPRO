@@ -50,8 +50,9 @@ classDiagram
     }
     Akun <|-- Pembeli
     Akun <|-- Penjual
-    DetailPenjualan --|> Barang
-    DetailPenjualan *-- Penjualan
     Penjualan <|-- Pembeli
     Penjualan <|-- Penjual
+    DetailPenjualan --|> Barang
+    DetailPenjualan *-- Penjualan
+    
 ```
