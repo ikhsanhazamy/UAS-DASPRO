@@ -30,7 +30,7 @@ classDiagram
         +getNama(): String
     }
 
-    class penjual{
+    class Penjual{
         -idPenjual
         -nama
         -email
