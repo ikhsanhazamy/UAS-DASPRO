@@ -56,7 +56,7 @@ classDiagram
         -method(type): type    
         -method(type): type
     }
-    Akun ---> Pembeli
+    Akun --> Pembeli
     Akun --> Penjual
     DetailPenjualan --> Barang
     Penjualan --> DetailPenjualan
