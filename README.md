@@ -14,7 +14,6 @@ classDiagram
     class Akun{
         -nama :String
         -email :String
-        -alamat :String
     }
     class Barang{
         -idBarang :String
@@ -28,7 +27,14 @@ classDiagram
         -nama: String 
         -email: String 
         -alamat: String 
-        +getNama(): String 
+        +getNama(): String
+    }
+
+    class penjual{
+        -idPenjual
+        -nama
+        -email
+        +getNama()
     }
     class Penjualan{
         -idPenjualan: String 
@@ -49,9 +55,10 @@ classDiagram
         -method(type): type    
         -method(type): type
     }
-    Akun --> Barang
-    Akun --> Pembeli
-    Barang --> DetailPenjualan
-    Pembeli --> Penjualan
+    Pembeli --> Akun
+    Penjual --> Akun
+    DetailPenjualan --> Barang
     Penjualan --> DetailPenjualan
+    Penjualan --> Pembeli
+    Penjualan --> Penjual
 ```
