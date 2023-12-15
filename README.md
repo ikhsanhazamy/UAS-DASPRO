@@ -14,6 +14,7 @@ classDiagram
     class Akun{
         -nama :String
         -email :String
+        -alamat :
     }
     class Barang{
         -idBarang :String
@@ -55,9 +56,8 @@ classDiagram
         -method(type): type    
         -method(type): type
     }
-    Akun --> Pembeli
+    Akun ---> Pembeli
     Akun --> Penjual
-
     DetailPenjualan --> Barang
     Penjualan --> DetailPenjualan
     Penjualan --> Pembeli
