@@ -11,14 +11,7 @@ classDiagram
     class Buku{
         -idBuku :String
         -namaBuku : String
-        -isAvailable : boolean
-    }
-
-    class CategoryBuku{
-        -idCategory : String
-        -Peminjaman :
-        -Buku :
-        -Category :
+        -genreBuku :
         -isAvailable : boolean
     }
 
@@ -26,7 +19,7 @@ classDiagram
         -idDetailPeminjaman : String
         -Peminjaman :
         -Buku :
-        -Ctegory :
+        -genreBuku :
      
     }
 
@@ -44,8 +37,8 @@ class Peminjaman{
 
     Akun <|--|> Peminjam
     Buku --|> Peminjaman
-    Peminjam <|--|> CategoryBuku
-    Buku <|-- CategoryBuku
+    Peminjam --|> Buku
+    Peminjaman <|--|> Peminjam
     Peminjaman --*  DetailPeminjaman
     
 ```
